@@ -4,22 +4,28 @@ To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
 and open the template in the editor.
 -->
+<!DOCTYPE html>
 <html>
     <head>
-            <title>Examination</title>
-            <link href="../css/page1.css" type="text/css" rel="stylesheet">
-            <meta charset="utf-8">
+        <title>The HTML5 Canvas</title>
+        <script src='../javascript/OSC.js'></script>
     </head>
-        
-    <body style="color: white">
-        <div id="headerx" >
-            <img id="logo" src="../img/uniben-logo.png" class="small" alt="logo">
-        </div>
-        
-        <div id='container'>
-            <form title="Login" action="cbt_index.php" method="post">
-                <input type="submit" value="Next">
-            </form>
-        </div>
+
+    <body>
+        <canvas id='mycanvas' width='320' height='240'>
+        This is a canvas element given the ID <i>mycanvas</i>
+        This text is only visible in non-HTML5 browsers
+        </canvas>
+        <script>
+        canvas = O('mycanvas');
+            context = canvas.getContext('2d');
+            context.fillStyle = 'red';
+            S(canvas).border = '1px solid black';
+            context.beginPath();
+            context.moveTo(160, 120);
+            context.arc(160, 120, 70, 0, Math.PI * 2, false);
+            context.closePath();
+            context.fill();
+        </script>
     </body>
 </html>

@@ -1,6 +1,7 @@
 <?php // cbt_index.php
 
 require 'login.php';
+require 'header.php';
 
 $id = $password = "";
 $conn = new mysqli($hn, $un, $pw, $db);
@@ -18,47 +19,13 @@ if (isset($_POST['id']) && isset($_POST['password'])) {
     if($result -> num_rows == 0) {
         $error = "Invalid login attempt";
     }else {
-        $_SESSION['id'] = $id;
-        $_SESSION['password'] = $password;
+        session_start();
         die("You are now logged in. Please <a data-transition='slide'
         href='page1.php?id=$id'>click here</a> to start the exam.</div>
         </body></html>");
         $result->close();
         $conn->close();
     }
-}
-
-function queryMysql($conn, $query)
-{
-    $result = $conn->query($query);
-
-    if (!$result) {
-        die("Fatal Error");
-    }
-    
-    return $result;
-}
-
-function get_post($conn, $var) {
-    return $conn->real_escape_string($_POST[$var]);
-}
-
-function sanitizeString($var)
-{
-    if (get_magic_quotes_gpc()) {
-        $var = stripslashes($var);
-    }
-
-    $var = strip_tags($var);
-    $var = htmlentities($var);
-    return $var;
-}
-
-function sanitizeMySQL($connection, $var)
-{
-    $var = $connection->real_escape_string($var);
-    $var = sanitizeString($var);
-    return $var;
 }
 
 echo <<<_END

@@ -10,6 +10,15 @@ and open the template in the editor.
 
 body {
     height: 4000px;
+    color: white;
+    background: whitesmoke;
+}
+
+#container {
+    width: 100%;
+    padding-top: 140px;
+    padding-left: 40px;
+    color: black;
 }
 
 #logo {
@@ -17,6 +26,51 @@ body {
     margin-left: 10px;
     margin-top: 10px;
     border-radius: 100%;
+}
+
+#page {
+    color: white;
+    padding-right: 40px;
+}
+
+#headerx .left {
+    float: left;
+}
+
+.form-button {
+    font-size: 95%;
+    color: black;
+    border-radius: 30%;
+    width: 80px;
+    height: 30px;
+    text-shadow: 0px 1px 1px #ffffff;
+    border-bottom: 1px solid #b2b2b2;
+    background-color: #b9e4e3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#E052E8), to(#FFFFFF));
+    background: -moz-linear-gradient(top, #E052E8, #FFFFFF);
+    background: -o-linear-gradient(top, #E052E8, #FFFFFF);
+    background: -ms-linear-gradient(top, #E052E8, #FFFFFF);
+}
+
+.form-button:hover {
+    color: black;
+    font-size: 95%;
+    border-radius: 30%;
+    width: 80px;
+    height: 30px;
+    text-shadow: 0px 1px 1px #ffffff;
+    border-bottom: 1px solid #b2b2b2;
+    background-color: #b9e4e3;
+    background: -webkit-gradient(linear, left top, left bottom, from(#E066FC), to(#FFFFFF));
+    background: -moz-linear-gradient(top, #E066FC, #FFFFFF);
+    background: -o-linear-gradient(top, #E066FC, #FFFFFF);
+    background: -ms-linear-gradient(top, #E066FC, #FFFFFF);
+}
+
+#headerx .right {
+    float: right;
+    padding-right: 1%;
+    padding-top: 5%;
 }
 
 img.large {
@@ -34,7 +88,7 @@ height: 100px;}
 #headerx {
     position: fixed;
     width: 100%;
-    height: 18%;
+    height: 120px;
     top: 0;
     left: 0;
     background: #900298;
