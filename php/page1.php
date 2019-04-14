@@ -40,21 +40,21 @@ echo <<<_END
             <form id="question-paper" action="../php/page1.php?id=$id" method="post">
                 <p>1. Who invented the telephone?<br />
                     <input type="radio" name="q[1]"
-                    value="0" /> John Snow
-                    <input type="radio" name="q[1]" value="1" /> Alexander Graham Bell
-                    <input type="radio" name="q[1]" value="0" /> My Dick
+                    value="0" /> John Snow<br />
+                    <input type="radio" name="q[1]" value="1" /> Alexander Graham Bell<br />
+                    <input type="radio" name="q[1]" value="0" /> My Dick<br />
                 </p><br>
                 <p>2. What is the name of Google's parent company?<br />
                     <input type="radio" name="q[2]"
-                    value="0" /> Apple
-                    <input type="radio" name="q[2]" value="0" /> Cisco
-                    <input type="radio" name="q[2]" value="1" /> Alphabet
+                    value="0" /> Apple<br />
+                    <input type="radio" name="q[2]" value="0" /> Cisco<br />
+                    <input type="radio" name="q[2]" value="1" /> Alphabet<br />
                 </p><br>
                 <p>3. Which private space company made the Falcon Heavy rocket?<br />
                     <input type="radio" name="q[3]"
-                    value="1" /> SpaceX
-                    <input type="radio" name="q[3]" value="0" /> Deep Horizon
-                    <input type="radio" name="q[3]" value="0" /> NASA
+                    value="1" /> SpaceX<br />
+                    <input type="radio" name="q[3]" value="0" /> Deep Horizon<br />
+                    <input type="radio" name="q[3]" value="0" /> NASA<br />
                 </p><br>
                 <input class="form-button" type="submit" value="Next">
             </form>
